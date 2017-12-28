@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Drag the Letter Button</title>
+<link rel="stylesheet" href="_styles/css/bootstrap-reboot.css" type="text/css" />
+<link rel="stylesheet" href="_styles/css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="_styles/lms_letterButtons.css" />
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Spicy+Rice" rel="stylesheet">
+
+
+<script type="text/javascript" src="_scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="_scripts/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="_scripts/xml_functions.js"></script>
+<script type="text/javascript">
+	// Initialize index of array that will store questions & answers
+	var xmlIndex = 0;
+    // Set up http request 
+	var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200){
+                //  myFunction(this);
+        }
+    };
+
+	// Load XML file and save to variable
+    xhttp.open("GET","LMS_exercises.xml",false);
+    xhttp.send();
+    xmlDoc=xhttp.responseXML;
+    var root = xmlDoc.documentElement;
+    var nodes = root.getElementsByTagName('exercise');
+	var count = nodes.length;	
+	
+  /*
+    xhttp.onload = function(){
+        console.log(xhttp.responseXML.documentElement.nodeName);;
+    }
+    
+    xhttp.onerror = function(){
+        console.log("error while getting xml.");
+    }
+    */
+	// Initialize variables for setting up quiz layout and storing questions and answers 
+	var letters = Array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t");
+	var definitions = Array();
+	// Duplicate of definition array for purpose of checking answers when a button is dropped
+	var defCopy = Array();
+	var terms = Array();
+	var termVal;
+	var defVal;
+	
+	var index = 0;
+	for(var i=0;i < count;i++){
+		var thisTag = get_firstChild(xmlDoc.getElementsByTagName('exercise')[i]);
+		var defVal = thisTag.childNodes[0].nodeValue;
+		
+		var lesson = xmlDoc.getElementsByTagName('exercise')[i].getAttribute("lesson");
+		var section = xmlDoc.getElementsByTagName('exercise')[i].getAttribute("section");
+		var termVal = xmlDoc.getElementsByTagName('exercise')[i].getAttribute("term");
+		
+		if(lesson=="1" && section=="4"){
+			definitions[index] = defVal;
+			defCopy[index] = defVal;
+			terms[index] = termVal;
+			index++;
+		}
+	}
+	
+</script>
+<script type="text/javascript" src="_scripts/lms_letterButton.js"></script>
+
+<body>
+    <div class="container"></div><!--End 'container' class-->  
+</body>
+</html>

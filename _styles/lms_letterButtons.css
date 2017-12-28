@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html, p {
+	font-size:14px;
+}
+
+html,
+body {
+	background-color:#005b9a;
+	color:#ffffff;
+}
+
+button {
+	
+	font-weight:800;
+	display:block;
+	min-width:100px;
+	text-align:center;
+	margin:10px;
+}
+
+h1 {
+	color:#cfe990;
+	font-family:"Spicy Rice", cursive;
+	text-shadow:1px 1px 3px #000000;
+	letter-spacing:.1rem;
+	padding-top:20px;
+	text-align:center;
+}
+
+.container{
+	width:1024px;
+	max-width:90%;
+}
+
+.container .activity {
+	flex-flow:column nowrap;
+	justify-content:center;
+	align-items:flex-start;
+	margin-top:20px;
+	color:#000000;
+}
+
+p {
+	margin:2px;
+}
+
+#descriptions,
+#dragButtons {
+	background-color:#a3d9f8;
+	width:80%;
+	max-width:80%;
+	margin:10px auto;
+	border-radius:4px;
+}
+
+#descriptions header,
+#dragButtons header {
+	font-family: "Luckiest Guy", cursive;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:center;
+	font-size:2.0rem;
+	min-height:40px;
+	padding:1% 0;
+	width:100%;
+	margin:0;
+}
+
+#inner,
+#inner2 {
+	flex-flow:row wrap;
+	justify-content:center;
+}
+
+#inner {
+	flex-flow:row nowrap;
+	padding:10px;
+}
+
+#drop-zone-label {
+	font-family:"Luckiest Guy", cursive;
+	color:#005b9a;
+	font-size:1.8rem;
+	letter-spacing:.3rem;
+	writing-mode:vertical-rl;
+	text-orientation:upright;
+	flex-flow:column nowrap;
+	justify-content:center;
+	align-items:center;
+}
+
+.draggable {
+	width:30px;
+	height:30px;
+	position:relative;
+}
+
+.draggable p {
+	width:30px;
+	height:30px;
+	text-align:center;
+	font-weight:bold;
+	position:relative;
+}
+
+.btn-wrapper {
+	display:-webkit-flex;
+	display:flex;
+	flex-flow: row nowrap;
+	align-items:center;
+	margin:5px;
+	min-width:33%;
+}
+
+.btn-wrapper span {
+	font-size:1.4rem;
+	padding-left:10px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+}
+
+#dragButtons p {
+	padding:0;
+	margin:0;
+}
+
+.droppable {
+	margin-right:14px;
+}
+
+.draggable.letter-btn {
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-color:#3a96d0;
+	color:#ffffff;
+	border:solid 2px #1780c3;
+	border-radius:20px;
+	z-index:2;
+	cursor:pointer;
+}
+
+
+.draggable.letter-btn.matched {
+	background-color:#242649;
+}
+
+#a p,#b p,#c p,#d p,#e p,#f p,#g p,#h p,#i p,#j p,#k p,#l p,#m p,#n p,#o p,#p p,#r p,#s p,#t p{
+	z-index:20;
+}
+
+
+.zoneContainer{
+	margin: 30px 0px 30px 50px;
+}
+
+.dropZone{
+	height:30px;
+	width:30px;
+	border:solid 2px #005b9a;
+	border-radius: 20px;
+	background-color:#fff;
+}
+
+.dragBtn{
+	margin-left:10px;
+	margin-top:10px;
+	padding-left:16px;
+	height:20px;
+	font-size:14px;
+	font-weight:bold;
+	color:#003366;
+	background-color:#003366;
+}
+
+.zoneContainer p {
+	max-width:80%;
+}
+
+@media screen and (max-width:700px) {
+	.container .activity {
+		flex-flow:column nowrap;
+	}
+
+	#dragButtons {
+		width:90%;
+		margin:0 auto 20px auto;
+	}
+
+	#dragButtons .btn-wrapper {
+		min-width:180px;
+		margin:5px 10px;
+	}
+
+	#descriptions #inner,
+	#dragButtons #inner2 {
+		display:-webkit-flex;
+		display:flex;
+		flex-flow:row wrap;
+	}
+
+	#drop-zone-label.d-flex {
+		display:none !important;
+	}
+
+
+}
+
+@media screen and (max-width:400px) {
+
+	.container {
+		max-width:100%;
+	}
+
+	#dragButtons {
+		width:100%;
+		position:fixed;
+
+	}
+
+	#dragButtons .inner2 {
+		justify-content:space-between;
+	}
+
+	#dragButtons .btn-wrapper {
+		flex-flow:column nowrap;
+		align-items:center;
+		min-width:60px;	
+	}
+
+	#dragButtons .btn-wrapper span,
+	#dragButtons .btn-wrapper .letter-btn {
+		padding:0;
+		margin:0 auto;
+		text-align:center;
+	}
+
+
+}

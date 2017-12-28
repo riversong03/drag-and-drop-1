@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<exercises>
+		<exercise lesson="1" section="3" cat="horizontal portal">
+			<term>aol.com</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="vertical portal">
+			<term>any company extranet</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="vertical portal">
+			<term>any company intranet</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="vertical portal">
+			<term>http://slashdot.org</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="vertical portal">
+			<term>www.cnet.com</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="horizontal portal">
+			<term>www.google.com</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="vertical portal">
+			<term>www.realestate.com</term>
+		</exercise>
+		<exercise lesson="1" section="3" cat="horizontal portal">
+			<term>www.yahoo.com</term>
+		</exercise>
+		<!--Begin next exercise set-->
+		<!--Letter buttons 1.4-->
+		<exercise lesson="1" section="4" term="join">
+			<definition>The combination of two database tables to create a new table.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="table">
+			<definition>A database topic that contains rows (records) and columns (attributes or fields).</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="record">
+			<definition>One row of a relational database table that represents an entity.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="field">
+			<definition>One column of a relational database table that represents a category of attributes.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="linking attribute">
+			<definition>A common attribute between tables that allows a join to take place.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="relation">
+			<definition>A link generated between two entities.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="tuple">
+			<definition>A description of two or more entities that are currently linked by a relation.</definition>
+		</exercise>
+		<exercise lesson="1" section="4" term="query">
+			<definition>The process of searching a database or the search command sent to a database.  Also the process of combining databases.</definition>
+		</exercise>
+<!--==================================================================================================================
+											Lesson 2
+	==================================================================================================================-->
+		<!--Begin new exercise set-->
+		<exercise lesson="2" section="2" type="title">
+			<title>Web site development principles:</title>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>Before you create a Web site, you must first create a #Input#.</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>Successful Web sites have a strong, central #Input# aimed at a distinct #Input#.</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>Because the design elements with which you display information on your site are important, you should #Input# your site on a regular basis as it is being developed.</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>When creating a Web site, #Input# are relevant organization employees or contributors who can help determine the purpose of the Web site, the site's look and feel, the services that the audience requires from the site, and so forth.</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>
+				As you communicate your Web site plan to relevant parties, consider using #Input# to help illustrate your plan.
+			</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>As you develop Web pages, make sure that you #Input# your Web pages using multiple Web browsers.</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>
+				As a general rule, the closer you adhere to #Input#, the more consistently your Web pages will render in various browsers.
+			</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>
+				Once your site is live, your Web team will receive various kinds of #Input# from customers and stakeholders.
+			</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="paragraph">
+			<paragraph>
+				When creating a Web site, you must consider #Input# issues related to ideas, products and images that are widely available.
+			</paragraph>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>Web site plan</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>theme</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>audience</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>validate</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>stakeholders</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>presentation aids</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>test</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>W3C standards</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>feedback</word>
+		</exercise>
+		<exercise lesson="2" section="2" type="term">
+			<word>intellectual property</word>
+		</exercise>
+<!--=========================================================================================================
+											Lesson 3
+	=========================================================================================================-->
+		<!--Begin next exercise set-->
+		<exercise lesson="3" section="1" term="declaration">
+			<example>&#123;background:tan&#125;</example>
+		</exercise>
+		<exercise lesson="3" section="1" term="property">
+			<example>background</example>
+		</exercise>
+		<exercise lesson="3" section="1" term="rule">
+			<example>body &#123;background:tan&#125;</example>
+		</exercise>
+		<exercise lesson="3" section="1" term="selector">
+			<example>body</example>
+		</exercise>
+		<exercise lesson="3" section="1" term="value">
+			<example>tan</example>
+		</exercise>
+		<!--Begin new exercise set-->
+		<exercise lesson="12" section="1" cat="OBI">
+			<definition>Developed to target high-volume, low-cost transactions</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="EDI">
+			<definition>Data segment contains a string of data elements separated by delimiters</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="EDI">
+			<definition>Unit of transmission known as a transaction set</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="OBI">
+			<definition>Is based on open technologies</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="EDI">
+			<definition>Can be combined with XML but is only machine-readable</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="OBI">
+			<definition>Transaction undergoes a process of validation and authorization to ensure that the purchase is authentic and approved.</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="EDI">
+			<definition>A universal method for formatting information so it can be transferred among organizations</definition>
+		</exercise>
+		<exercise lesson="12" section="1" cat="OBI">
+			<definition>Four components of a transaction are the requisitioner, buying organization, selling organization and payment authority.</definition>
+		</exercise>
+</exercises>
